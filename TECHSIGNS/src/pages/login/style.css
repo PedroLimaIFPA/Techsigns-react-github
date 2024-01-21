@@ -1,0 +1,189 @@
+.conteiner-showModal{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap:11px;
+
+}
+
+
+.conteiner-showModal input{
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding:10px;
+    font-size: 1.1em; 
+    background: transparent;
+
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+}
+
+.conteiner-showModal input[type="date"]{
+   
+    width: 235px;
+
+}
+
+
+.area-container{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    
+ 
+}
+.login-area{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    backdrop-filter: blur(30px);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.089);
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 100px;
+    height: 600px;
+    width: 80%;
+    
+   
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #072354;
+    border-radius: 10px;
+    height: 600px;
+    width: 50%;
+    gap: 40px;
+}
+
+#texto{
+    color: white;
+    font-size: 30px;
+    margin-top: -150px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 95px;
+    
+
+}
+#title-login{
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 95px;
+
+}
+
+.inputs input {
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    margin-right: 100px;
+    gap: 10px;
+
+}
+
+.bts{
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin-right: 90px;
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;   
+}
+
+.bts button{
+
+    background-color: white;
+    color: black;
+    cursor: pointer;  
+    border-radius: 7px;
+    width: 100px;
+    height: 45px;
+
+}
+
+
+
+
+
+.login-background{
+    position: absolute;
+    right: 0px;
+    backdrop-filter: blur(25px);
+    background-image: url("../../../public/login.gif");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-radius: 100px;
+    height: 600px;
+    width: 57%;
+
+}
+
+
+.login-area input{
+    border:none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 5px;
+    font-size: 1.1em; 
+    background: transparent;
+}
+
+.login-area label{
+    color: white;
+}
+
+
+@media(max-width:900px){
+
+    .inputs input {
+       
+        width: 200px;
+        height: 20px;
+    }
+
+    .inputs{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .login-area{
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        grid-auto-flow: 10px;
+    }
+
+    .login-background{
+        
+        width: 100%;
+        position: unset;
+        display: none;
+        
+    
+    }
+
+    #texto,#title-login,.bts,.inputs input{
+
+        margin-right: 0px;   
+    }
+
+
+
+}
